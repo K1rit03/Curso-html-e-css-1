@@ -30,7 +30,9 @@ body{
     color : var(--cor-secundaria);
     box-sizing : border-box;
 
-.cabecalho{
+}
+
+.cabecalho-top {
     padding: 2% 0 0 15%;
 }
 
@@ -61,6 +63,7 @@ body{
     display: flex;
     align-items: center ;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .content-apresentation{
@@ -130,3 +133,27 @@ body{
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+@media (max-width: 1200px ) {
+   
+   .cabecalho {
+        padding: 6%;
+   }
+   
+   .cabecalho-menu{
+        justify-content: center;
+   }
+
+    .content {
+    flex-direction: column-reverse;
+    padding: 10%;
+   } 
+
+   .content-apresentation{
+        width: auto;
+   }
+
+   
+
+}
+
